@@ -13,7 +13,8 @@ int main()
     ls.push_back(4);
     // elements can be printed from both end there is no option to in between elements directly
     cout
-        << ls.front() << "  " << ls.back();
+        << ls.front() << "  "
+        << ls.back() << endl;
     ls.reverse();
     for (int i : ls)
     {
