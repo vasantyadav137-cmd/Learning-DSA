@@ -43,12 +43,14 @@ int main()
 {
     int array1[] = {5, 4, 7, 9, 3, 5, 6, 7};
     int array2[] = {6, 8, 3, 9, 5, 3};
+    // using map
     vector<int> array = merge(array1, array2, 8, 6);
     for (int x : array)
     {
         cout << x << " ";
     }
     cout << endl;
+    // uisng set
     vector<int> arr = un(array1, array2, 8, 6);
     for (int x : arr)
     {

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 // Using kadane's algorithm
 int max_sum_subarray(int array[], int size)
@@ -17,12 +18,19 @@ int max_sum_subarray(int array[], int size)
             sum = 0;
         }
     }
-    cout << start << " " << end << endl;
+    // if (max_subarray == 0)
+    // {
+    //     max_subarray = *(array, array + size);
+    // }
+    if (max_subarray >= 0)
+    {
+        cout << start << " " << end << endl;
+    }
     return max_subarray;
 }
 int main()
 {
-    int arr[] = {9, 6, 5, 4, 3, -32, 21, 4, 2, 0};
+    int arr[] = {-7, -6, -1};
     int size = sizeof(arr) / sizeof(arr[0]);
     cout << max_sum_subarray(arr, size);
     return 0;
