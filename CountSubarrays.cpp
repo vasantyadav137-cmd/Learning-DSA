@@ -21,6 +21,6 @@ int CouontSubarrays(vector<int> array, int k)
 }
 int main()
 {
-    vector<int> array = {2, 2, 2, 3, 3, 4, 2, 6};
+    vector<int> array = {2, 2, 2, 3, 3, -6, 4, 2, 6};
     cout << CouontSubarrays(array, 6);
 }
